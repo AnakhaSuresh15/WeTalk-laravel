@@ -12,7 +12,7 @@ class User
     }
     function getUserValidation($username, $password) {
         $pword=DB::select("SELECT pword1 from `users` WHERE uname='$username'");
-        if($pword[0]->pword1 == $password) {
+        if($pword && $pword[0]->pword1 == $password) {
             return true;
         }
         else {

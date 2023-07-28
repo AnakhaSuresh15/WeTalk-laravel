@@ -11,3 +11,4 @@ Route::post('/adduser', 'UserController@addUser');
 Route::get('/contacts/{username?}', 'ContactController@getContacts');
 Route::post('/addcontact', 'ContactController@addContacts');
 Route::get('/getuservalidation', 'UserController@getUserValidation');
+Route::put('/setImageId/{username?}', 'ImageController@setImageId');
